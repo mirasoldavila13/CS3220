@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <!-- <link rel="stylesheet" href="registrationForm.css"> !-->
+    <style>
+        body,
+        html {
+            background-color: darkseagreen;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 18px;
+        }
+        
+        .jumbotron {
+            text-align: center;
+        }
+        
+        #fullName, #email, #telephone, #password1, #password2 {
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .container-fluid {
+            text-align: center;
+        }
+        
+        .register-form {
+            font-size: 16px;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            -moz-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+        }
+        
+        .regbutton {
+            height: 50px;
+            width: 200px;
+            background-color: maroon;
+            border-radius: 0px;
+            font-size: 18px;
+            color: white;
+            border: none !important;
+            margin-bottom: 5px;
+        }
+        
+        .regbutton:hover {
+            color: white;
+            background-color: #aa422f;
+        }
+        
+        .regbutton:active {
+            color: white;
+            background-color: #aa422f;
+        }
+        
+        .register-form label {
+            color: aliceblue;
+        }
+        
+        .register-form input {
+            margin-bottom: 5px;
+            width: 430px;
+            height: 40px;
+            border-radius: 0px;
+        }
+    </style>
+    </style>
+    
+
+</head>
+
+<body>
+    
+    
+    <div class="jumbotron">
+        <h1>Registration Form</h1>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid">
+            <form action="http://cs3.calstatela.edu:8080/cs3220stu120/Lab2/RegistrationServlet" method="Post" class="register-form">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label for="fullName">NAME</label>
+                        <input name ="name" text="name" class="form-control" id="fullName" placeholder="Enter your name">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label for="email">EMAIL</label>
+                        <input name ="email" text="email" class="form-control" id="email" placeholder="bob@gmail.com">
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label for="telephone">Telephone</label>
+                        <input name="telephone" type="tel" class="form-control" id="telephone" placeholder="Enter your telephone">
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label for="password1">PASSWORD</label>
+                        <input name="password1" type="password" class="form-control" id="password1" placeholder="Enter your password">
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <label for="password2">RE-ENTER PASSWORD</label>
+                        <input name="password2" type="password" class="form-control" id="password2" placeholder="Confirm your password">
+                    </div>
+                </div>
+                
+
+                <hr>
+                
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                        <button type="submit" class="btn btn-default regbutton">Submit</button>
+                    </div>
+
+
+                </div>
+            </form>
+
+</body>
+
+
+</html>

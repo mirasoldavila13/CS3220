@@ -1,0 +1,68 @@
+
+1.
+The name of the database model with which SQL is associated with is relational model.
+
+2. 
+
+By creating my own Database Management System It will provide efficient data that is reliable, persistent, secured,
+and convenient. Where the Database Management system can handle failures and be able to restore the data that
+was permanently stored within the DMS.
+
+3.
+SalesID: 3
+Lastname: Bob
+Firstname: Bentley
+Initials: BBB
+Base: 100
+Supervisor: 4
+
+
+
+
+4.
+
+The output the query produce was the average of the weightInKg.
+
+
+5.
+The query returns with an empty set because natural join doesn't have a specified join condition.
+In both of the tables don't contain any fields that match.
+
+6. 
+
+The first query list the studio names from the studios who's genre is not jazz. Where the second query only shows
+two studionames that genre is not considered jazz.
+
+
+
+
+7.
+
+This query list the members firstname, lastname and the maximum number of letters in either their 
+first or lastname.
+
+8.
+
+This query list the lastname, firstname, and artistname from members who is not the main contact person for the artists.
+
+
+
+9. 
+Select firstname, lastname, FLOOR(datediff(curdate(),birthday)/365.25) as "Age" from members WHERE Region = "VA";
+
+10. 
+
+select s1.firstname, s2.studioname from salespeople s1 left join studios s2 using(salesID);
+
+11.
+
+select tr.tracktitle, IF(a.artistname = "The Bullets", 'yes', 'no' ) as "By the Bullets?" from tracks tr join titles using(titleID) join artists a using(artistID);
+
+
+12.
+
+In the first table would be called the "KiosksID" for the five different manufacturers, and details about each manufacturer such as the city,region,etc. 
+Within that table there wil be a Primary key named "manufacturer" and each manufacturer will have their own unique identity. in the second
+table would be called "Scissors" and the primary key will be "ScissorsID" and there the foreign key would be the KiosksID.
+within that table there will be information regarding the scissors like the color, type of scissor, etc.
+The last table will be called "employees" that will contain information on the supervisors, salespeople, firstname, lastname etc.
